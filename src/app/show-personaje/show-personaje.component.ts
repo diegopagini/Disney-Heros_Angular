@@ -23,31 +23,32 @@ export class ShowPersonajeComponent implements OnInit {
 
     this.personajesService.getPersonajes().subscribe((response: Array<Personajes>) => {
       this.personajes = response;
-      // this.searchCharacter();
-      this.anotherWaySearch();      
+      
+      this.searchCharacter();
+      // this.anotherWaySearch();      
     });
   }
 
   //La mejor manera es con filter, creo yo
-  anotherWaySearch() {
-    const character = this.personajes.forEach(character => {
-      if(character.id === parseInt(this.idPersonaje)) {
-        this.personaje = character;
-        this.idCharacter = this.personaje.id
-      } else {
-        console.log('No hay match')
-      }
-      console.log('De otra forma, el id es:', this.idCharacter)
+  // anotherWaySearch() {
+  //   const character = this.personajes.forEach(character => {
+  //     if(character.id === parseInt(this.idPersonaje)) {
+  //       this.personaje = character;
+  //       this.idCharacter = this.personaje.id
+  //     } else {
+  //       console.log('No hay match')
+  //     }
+  //     console.log('De otra forma, el id es:', this.idCharacter)
       
-    })
+  //   })
 
-  }
-
-  // searchCharacter() {
-  //   const personajeEncontrado = this.personajes.filter(el => {
-  //     return el.id === parseInt(this.idPersonaje);
-  //   });
-  //   this.personaje = personajeEncontrado[0];
   // }
+
+  searchCharacter() {
+    const personajeEncontrado = this.personajes.filter(el => {
+      return el.id === parseInt(this.idPersonaje);
+    });
+    this.personaje = personajeEncontrado[0];
+  }
 
 }
