@@ -11,6 +11,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { HorizontalCardComponent } from './shared/horizontal-card/horizontal-card.component';
 import { ShowPersonajeComponent } from './show-personaje/show-personaje.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ShowPersonajeComponent } from './show-personaje/show-personaje.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -65,6 +65,28 @@ export class PersonajesService {
       tieneVideojuego: false,
       soloPeliculaAnimada: true
     },
+    { id: 7,
+      nombre: 'Sirenita',
+      biografia: `La sirena Ariel está fascinada por el mundo de los humanos, pero su padre le prohíbe relacionarse con ellos. En un viaje secreto, se enamora de un humano y recurre a una perversa hechicera para que, mediante un conjuro, su amor triunfe.`,
+      foto: 'sirenita.png',
+      banner: '',
+      cantidadPeliculas: 3,
+      tieneVideojuego: false,
+      soloPeliculaAnimada: false
+    },
+    { id: 8,
+      nombre: 'pluto',
+      biografia: `Pluto generalmente caracteriza al perro de Mickey Mouse, aunque también ha sido la mascota del Pato Donald y de Goofy o Tribilín.
+      De forma inusual para los personajes creados por Disney para la serie Mickey Mouse, Pluto no está antropomorfizado, tan solo posee un amplio rango de expresiones faciales.
+      En las animaciones que lo tienen como protagonista, sus amigos son Fifi (perro pequinés), Dina y el San Bernardo Ronnie. Entre sus enemigos se encuentran Butch (un perro bulldog) y las ardillas Chip y Dale (Chip y Chop en España) entre otros personajes.
+      En el año 1942 se hizo una animación en la que se presentaba al hijo de Pluto, aunque no fue un personaje que se desarrollara mucho más.
+      En algunas ocasiones se menciona que Pluto fue creado cuando se descubrió el planeta Plutón (de allí su nombre "Pluto", el nombre en inglés de Plutón). Sin embargo, hasta la fecha, esto no ha sido confirmado.`,
+      foto: 'pluto.png',
+      banner: '',
+      cantidadPeliculas: 1,
+      tieneVideojuego: true,
+      soloPeliculaAnimada: true
+    },
   ]);
   }
 }
