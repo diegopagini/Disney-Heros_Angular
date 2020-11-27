@@ -87,6 +87,24 @@ export class PersonajesService {
       tieneVideojuego: true,
       soloPeliculaAnimada: true
     },
+    { id: 9,
+      nombre: 'Moana',
+      biografia: `Moana, una adolescente de las islas del sur del Pacífico, atraviesa el océano y explora el mundo para demostrar que es tan valiente como el resto de su familia. En su periplo se encontrará con Maui, quien en el pasado fue un semidios poderoso.`,
+      foto: 'moana.png',
+      banner: '',
+      cantidadPeliculas: 1,
+      tieneVideojuego: false,
+      soloPeliculaAnimada: true
+    },
+    { id: 10,
+      nombre: 'Stich',
+      biografia: `El experimento 626, más conocido como Stitch, es un personaje ficticio, el protagonista de la serie animada Lilo & Stitch: The Series y las películas Lilo & Stitch, Stitch! The Movie, Lilo & Stitch 2: Stitch Has a Glitch y Leroy & Stitch.`,
+      foto: 'stich.png',
+      banner: '',
+      cantidadPeliculas: 4,
+      tieneVideojuego: false,
+      soloPeliculaAnimada: true
+    },
   ]);
   }
 }

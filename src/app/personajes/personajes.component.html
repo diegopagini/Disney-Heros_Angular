@@ -1,11 +1,27 @@
 <section>
   <div class="container">
     <div class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" [formControl]="search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="searching()">Search</button>
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+        [formControl]="search"
+        (keyup.enter)="searching()"
+      />
+      <button
+        class="btn btn-outline-success my-2 my-sm-0"
+        type="submit"
+        (click)="searching()"
+      >
+        Search
+      </button>
     </div>
   </div>
 </section>
 <section class="grid-container">
-  <app-horizontal-card *ngFor="let personaje of personajes" [personaje]="personaje"></app-horizontal-card>
+  <app-horizontal-card
+    *ngFor="let personaje of personajesBuscados"
+    [personaje]="personaje"
+  ></app-horizontal-card>
 </section>
